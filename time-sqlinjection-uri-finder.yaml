@@ -1,4 +1,4 @@
-id: time-based-sqli-uri
+id: time-based-sqli-uri-finder
 
 info:
   name: Time-Based SQL Injection in URI
