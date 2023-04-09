@@ -1,12 +1,15 @@
 id: xss-injection-swagger
 
 info:
-  name: XSS Injection in Swagger URLs
+  name: Verificação de Injeção de XSS em URLs do Swagger
   author: [erickfernandox]
   severity: high
   description: |
-    Este template verifica se as URLs de Swagger retornam uma imagem com código XSS injetado.
-  tags: xss,injection,swagger
+    Este template verifica se as URLs do Swagger estão vulneráveis a injeção de código XSS, explorando possíveis vulnerabilidades em diversas rotas.
+  tags: 
+    - xss
+    - injection
+    - swagger
 
 http:
   - method: GET
