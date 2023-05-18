@@ -83,5 +83,4 @@ requests:
     matchers:
       - type: word
         words:
-          - "Swagger UI"
-          - "Swagger"          
+          - "Swagger UI"  
