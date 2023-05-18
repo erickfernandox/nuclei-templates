@@ -77,9 +77,11 @@ requests:
       - "{{BaseURL}}/v1/"          
       - "{{BaseURL}}/v2/"          
       - "{{BaseURL}}/v3/"       
+      - "{{BaseURL}}/api/schema/swagger-ui/"
       
       
     matchers:
       - type: word
         words:
           - "Swagger UI"
+          - "Swagger"          
