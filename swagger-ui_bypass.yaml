@@ -28,7 +28,9 @@ requests:
     matchers:
       - type: word
         words:
-          - "Swagger UI"  
+          - "swagger-ui"  
+          
+        condition: and
           
       - type: status
         status: 
