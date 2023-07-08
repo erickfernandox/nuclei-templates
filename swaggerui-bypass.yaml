@@ -29,4 +29,6 @@ requests:
       - type: word
         words:
           - "swagger-ui"  
-    expected_status: 200
+          
+    expect:
+      - status: 200
