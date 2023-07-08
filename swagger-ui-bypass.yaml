@@ -26,6 +26,9 @@ requests:
       - "{{BaseURL}}/v1/..;/v1/"     
       
     matchers:
+      - type: status
+        status:
+          - 200
       - type: word
         words:
           - "swagger-ui.js"  
