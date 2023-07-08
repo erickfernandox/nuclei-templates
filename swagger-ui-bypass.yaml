@@ -29,7 +29,3 @@ requests:
       - type: word
         words:
           - "Swagger UI"  
-          
-      - type: status
-        status: 
-         - 200
