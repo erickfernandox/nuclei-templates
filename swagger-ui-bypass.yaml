@@ -31,4 +31,4 @@ requests:
           - 200
       - type: word
         words:
-          - "swagger-ui.js"  
+          - "swagger-ui"  
