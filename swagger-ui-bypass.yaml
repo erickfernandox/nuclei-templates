@@ -14,7 +14,7 @@ requests:
   - method: GET
     path:
       - "{{BaseURL}}/swagger/..;/swagger/index.html"
-      - "{{BaseURL}}/swagger-ui/../swagger-ui/index.html"
+      - "{{BaseURL}}/swagger-ui/..;/swagger-ui/index.html"
       - "{{BaseURL}}/api/..;/api/"
       - "{{BaseURL}}/api/..;/api/docs/"
       - "{{BaseURL}}/api-doc/..;/api-doc"
@@ -26,9 +26,7 @@ requests:
       - "{{BaseURL}}/v1/..;/v1/"     
       
     matchers:
-      - type: status
-        status:
-          - 200
       - type: word
         words:
           - "swagger-ui"  
+    expected_status: 200
