@@ -30,6 +30,6 @@ requests:
         words:
           - "swagger-ui"  
           
-    predicates:
-      - - equals:
-          - status: 200
+      - type: status
+        status: 
+          - 200
