@@ -30,8 +30,5 @@ requests:
         words:
           - "swagger-ui"  
           
-        condition: and
-          
       - type: status
-        status: 
-          - 200
+        status: 200
