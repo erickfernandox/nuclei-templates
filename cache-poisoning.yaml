@@ -38,6 +38,7 @@ http:
         Referer: {{cache_header}}.xfh
         User-Agent: {{cache_header}}.xfi
         Cookie: Teste: {{cache_header}}.xfj
+        From: {{cache_header}}.xfk
 
       - |
         GET /?{{cache_key}}=9 HTTP/1.1
