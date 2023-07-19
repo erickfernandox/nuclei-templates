@@ -25,10 +25,19 @@ http:
         X-Forwarded-Host: {{cache_header}}.xfh
         X-Forwarded-For: {{cache_header}}.xff
         X-Forwarded-Scheme: http
+        X-Forwarded: {{cache_header}}.xfa
         X-Originating-IP: {{cache_header}}.xfq
         X-Remote-IP: {{cache_header}}.xfr
         X-Remote-Addr: {{cache_header}}.xfs
         X-Client-IP: {{cache_header}}.xft
+        X-Proxyuser-IP: {{cache_header}}.xfb
+        X-Original-Url: {{cache_header}}.xfc
+        True-Client-Ip: {{cache_header}}.xfd
+        Cluster-Client-Ip: {{cache_header}}.xfe
+        Token: {{cache_header}}.xfg
+        Referer: {{cache_header}}.xfh
+        User-Agent: {{cache_header}}.xfi
+        Cookie: Teste: {{cache_header}}.xfj
 
       - |
         GET /?{{cache_key}}=9 HTTP/1.1
