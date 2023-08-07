@@ -20,7 +20,7 @@ info:
 http:
   - method: GET
     path:
-      - "{{BaseURL}}/?protocol=https&domain=com&subdomain=example&host=X
+      - "{{BaseURL}}/?protocol=https&domain=com&subdomain=example&host=X"
 
     stop-at-first-match: true
     matchers-condition: and
