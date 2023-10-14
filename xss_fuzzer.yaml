@@ -1,9 +1,9 @@
-id: html-reflect-fuzzer-erickfernandox
+id: xss-reflect-fuzzer-erickfernandox
 
 info:
   name: html-reflect-fuzzer
   author: erickfernandox
-  severity: info
+  severity: medium
   description: |
     Verifica parametros ocultos que refletem dentro do HTML da pagina
   classification:
