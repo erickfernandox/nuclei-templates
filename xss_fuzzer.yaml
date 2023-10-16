@@ -73,6 +73,7 @@ http:
       - "{{BaseURL}}/%0D%5c%27%22%20onmouseover=alert.URI"               
       - "{{BaseURL}}/<>/%27%22%20onmouseover=alert.URI"                        
       - "{{BaseURL}}/%5c%27%22%20onmouseover=alert.URI"                  
+      - "{{BaseURL}}/%27%22>%27%22%20onmouseover=alert.URI"                  
     matchers-condition: and
     matchers:
       - type: word
