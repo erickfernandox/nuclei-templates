@@ -99,7 +99,8 @@ http:
       - "{{BaseURL}}/%0D%5c%27%22%20onmouseover=efx-URI"               
       - "{{BaseURL}}/<>/%27%22%20onmouseover=efx-URI"                        
       - "{{BaseURL}}/%5c%27%22%20onmouseover=efx-URI"                  
-      - "{{BaseURL}}/%27%22>%27%22%20onmouseover=efx-URI"                  
+      - "{{BaseURL}}/%27%22>%27%22%20onmouseover=efx-URI"
+      - "{{BaseURL}}/JyIgb25tb3VzZW92ZXI9ZWZ4LWI2NAo="
     matchers-condition: and
     matchers:
       - type: word
