@@ -79,7 +79,7 @@ http:
       - type: word
         part: body
         words:                    
-          - "'\" onmouseover=efx-URI"
+          - "'\" onmouseover=efx-"
           
       - type: status
         status:
