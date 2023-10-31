@@ -104,9 +104,9 @@ http:
     matchers-condition: and
     matchers:
       - type: word
-        part: body
+        part: regex
         words:                    
-          - "';alert(1);"
+          - "(?<!")';alert\(1\);"
           
       - type: status
         status:
