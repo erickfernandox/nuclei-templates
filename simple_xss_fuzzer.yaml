@@ -1,7 +1,7 @@
-id: xss-reflect-fuzzer-erickfernandox
+id: simples_xss-reflect-fuzzer-erickfernandox
 
 info:
-  name: html-reflect-fuzzer
+  name: simples_js_html-reflect-fuzzer
   author: erickfernandox
   severity: medium
   description: |
