@@ -103,8 +103,8 @@ http:
       - "{{BaseURL}}/JyIgb25tb3VzZW92ZXI9ZWZ4LWI2NAo="
     matchers-condition: and
     matchers:
-      - type: word
-        part: regex
+      - type: regexwordword
+        part: body
         words:                    
           - "(?<!\")';alert\(1\);"
           
