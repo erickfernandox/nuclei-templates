@@ -110,9 +110,6 @@ http:
           
       - type: status
         status:
-          - 200
-          - 404        
-          - 500
-          - 403          
+          - 200        
           
         condition: or
