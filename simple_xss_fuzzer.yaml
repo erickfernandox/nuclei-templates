@@ -105,7 +105,7 @@ http:
     matchers:
       - type: regex
         part: body
-        words:                    
+        regex:                    
           - "(?<!\")';alert(1);"
           
       - type: status
