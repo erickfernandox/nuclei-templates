@@ -106,7 +106,7 @@ http:
       - type: regex
         part: body
         words:                    
-          - "(?<!\")';alert\(1\);"
+          - "(?<!\")';alert(1);"
           
       - type: status
         status:
