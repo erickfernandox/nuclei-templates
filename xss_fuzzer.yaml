@@ -107,12 +107,18 @@ http:
         part: body
         words:                    
           - "'\" onmouseover=efx-"
+
           
+        condition: and
+
+      - type: word
+        words:
+          - "text/html"
+        part: header
+
+        condition: and
+
       - type: status
         status:
           - 200
-          - 404        
-          - 500
-          - 403          
-          
-        condition: or
+          - 404
