@@ -18,9 +18,6 @@ http:
   - method: GET
     path:
       - "{{BaseURL}}/?protocol=A&domain=C&subdomain=B&host=X"
-      - "{{BaseURL}}/?domain=example.com"
-      - "{{BaseURL}}/?host=example.com"      
-      
 
     stop-at-first-match: true
     matchers-condition: and
