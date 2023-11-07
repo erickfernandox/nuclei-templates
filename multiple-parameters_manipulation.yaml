@@ -18,17 +18,16 @@ http:
   - method: GET
     path:
       - "{{BaseURL}}/?protocol=A&domain=C&subdomain=B&host=X"
-
-    stop-at-first-match: true
     matchers-condition: and
     matchers:
       - type: word
         part: body
         words:                    
           - "A://B.C"
-          - "a://B.C"     
+          - "a://B.C"          
           - "a://b.c"          
 
+          
         condition: and
 
       - type: word
@@ -36,6 +35,7 @@ http:
           - "text/html"
         part: header
 
+        condition: and
 
       - type: status
         status:
