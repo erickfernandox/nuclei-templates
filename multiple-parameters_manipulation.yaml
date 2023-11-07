@@ -18,28 +18,20 @@ http:
   - method: GET
     path:
       - "{{BaseURL}}/?protocol=A&domain=C&subdomain=B&host=X"
+
+    stop-at-first-match: true
     matchers-condition: and
     matchers:
       - type: word
         part: body
         words:                    
-          - "A://B.C"
-          - "a://B.C"          
-          - "a://b.c"          
-
+          - '"A://B.C'
           
-        condition: and
-
-      - type: word
-        words:
-          - "text/html"
-        part: header
-
-        condition: and
-
       - type: status
         status:
-          - 200
+          - 200     
           - 404
           - 302
           - 301
+          
+        condition: or
