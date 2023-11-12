@@ -110,6 +110,7 @@ http:
         part: body
         words:                    
           - "'\" teste=efx-"
+          - "'\"	teste=efx"
 
           
         condition: and
