@@ -4,7 +4,7 @@ info:
   name: Time-Based SQL Injection in URI
   description: Test for Time-Based SQL Injection in URI
   author: erickfernandox
-  severity: high
+  severity: critical
   tags: sqlinjection
 
 
