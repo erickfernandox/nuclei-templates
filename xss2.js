@@ -1,3 +1,3 @@
 $(function(){
-  alert(1);
+  alert(document.domain);
 });
