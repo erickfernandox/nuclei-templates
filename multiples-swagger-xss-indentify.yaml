@@ -1,4 +1,4 @@
-id: swagger-page
+multiples-swagger-xss-indentify.yamlid: swagger-page
 
 info:
   name: Verificação de Swagger em URLs
@@ -78,7 +78,7 @@ requests:
       - "{{BaseURL}}/v3/"       
       - "{{BaseURL}}/api/schema/swagger-ui/"
       
-      
+    stop-at-first-match: true
     matchers:
       - type: word
         words:
